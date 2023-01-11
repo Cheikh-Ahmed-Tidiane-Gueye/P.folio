@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.folio</title>
+
+    <!-- ---------------------- Icon du site ------------------------ -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- ------------------- Bootstrap 5.3.0 en Local ---------------------
+    <link rel="stylesheet" href="../Bootstrap CDN/Bootstrap 5.3.0/css/bootstrap.css">
+    <script src="../Bootstrap CDN/Bootstrap 5.3.0/js/bootstrap.js"></script> -->
+    
+    <!-- ------------------- Bootstrap 5.3.0 CDN --------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+    <!------------------------- FontAwesome ------------------------- --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+    <!-- ------------------ C.S.S. & JavaScript --------------------- -->
+    <link rel="stylesheet" href="style.css">
+  
+    
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
+    <!-- header -->
+    <header class="header_wrapper">
+        <!-- Navbar section -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="logo" class="img-fluid">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa-solid fa-bars-staggered"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                  <li class="nav-item mt-3 mt-lg-0">
+                    <a class="main-btn" href="#contact">Engagez moi</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar section exit -->
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- Banner section -->
+      <section id="home" class="banner_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center text-md-start">
+              <h6>Bienvenue dans mon monde</h6>
+              <h1>Je m'appelle <span>Cheikh A.T. Gueye</span><br>Je suis un <span>Developpeur web.</span><br>baser au Senegal.</h1>
+              <div class="mt-4">
+                <a class="main-btn" href="">Telecharger CV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Banner section exit-->
+      
+      <!-- About section -->
+      <section id="about" class="about_wrapper">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+              <img src="images/about1.jpg" class="img-fluid rounded-3" alt="About-us">
+            </div>
+            <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+              <div class="my-2 my-lg-0">
+                <span class="subtitle">Mes informations de profil</span>
+                <h2>A propos de moi</h2>
+                <p>
+                  Salut, je m'appelle Cheikh Ahmed Tidiane Gueye et j'ai 23 ans.<br> 
+                  Je suis développeur web/mobile débutant et j'ai déjà acquis des compétences en HTML 5, CSS 3 et Bootstrap.<br> 
+                  Cepandant, j'espère pouvoir apprendre de nouveaux langages de programmation dans le futur.
+                </p>
+              </div>
+              <!-- Tabs -->
+              <div class="pt-4">
+                <ul class="nav nav-pills justify-content-center justify-content-lg-between mb-3" id="pills-tab" role="tablist">
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-etude-tab" data-bs-toggle="pill" data-bs-target="#pills-etude" type="button" role="tab" aria-controls="pills-etude" aria-selected="false">Etudes</button>
+                  </li>
+                  
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-award-tab" data-bs-toggle="pill" data-bs-target="#pills-award" type="button" role="tab" aria-controls="pills-award" aria-selected="false">Diplômes</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill" aria-selected="true">Compétences</button>
+                  </li>
+
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-experience-tab" data-bs-toggle="pill" data-bs-target="#pills-experience" type="button" role="tab" aria-controls="pills-experience" aria-selected="false">Expérience</button>
+                  </li>
+                </ul>
+              
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- Tab Etude -->
+                  <div class="tab-pane fade" id="pills-etude" role="tabpanel" aria-labelledby="pills-etude-tab" tabindex="0">
+                    <p>Etudes</p>
+                  </div>
+                  <!-- Tab Diplomes -->
+                  <div class="tab-pane fade" id="pills-award" role="tabpanel" aria-labelledby="pills-award-tab" tabindex="0">
+                    <dl class="text-white">
+                      <dt>Baccalauréat</dt>
+                      <dd>Licee Lamine Gueye - 2018/2019</dd>
+                      <dt>Licence 1</dt>
+                      <dd><a href="https://www.uvs.sn/" style="text-decoration: none;">Universite Virtuel Du Senegal (UVS)</a> - 2019/2020</dd>                     
+                      <dt>Licence 2</dt>
+                      <dd><a href="https://www.uvs.sn/" style="text-decoration: none;">Universite Virtuel Du Senegal (UVS)</a> - 2020/2021</dd>               
+                      <dt>Licence 3</dt>
+                      <dd><a href="https://www.uvs.sn/" style="text-decoration: none;">Universite Virtuel Du Senegal (UVS)</a> - 20../20..</dd>
+                      <dt>DTS en programmation</dt>
+                      <dd><a href="https://www.bakeli.tech/">Bakeli School of Technology</a> - 20../20..</dd>
+                    </dl>
+                  </div>
+                  <!-- Tab competences -->
+                  <div class="tab-pane fade show active" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab" tabindex="0">
+                    <div class="single-progress">
+                      <!-- HTML -->
+                      <div class="row">
+                        <div class="col-sm-4 col-md-3 col-xl-2">
+                          <div class="d-flex justify-content-center align-items-center">
+                            <i class="fab fa-html5 fa-2x me-2 text-primary"></i>
+                            <p class="fw-bold m-0">HTML5</p>
+                          </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                          <div class="progress">
+                            <div class="progress-bar" style="width: 75%" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <br>
+                      <!-- CSS -->
+                      <div class="row">
+                        <div class="col-sm-4 col-md-3 col-xl-2">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-css3-alt fa-2x me-4 text-primary"></i>
+                                <p class="fw-bold m-0">CSS3</p>
+                            </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                          <div class="progress">
+                            <div class="progress-bar" style="width: 70%;" role="progressbar"  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <br>
+                      <!-- Bootstrap -->
+                      <div class="row">
+                        <div class="col-sm-4 col-md-3 col-xl-2 ">
+                          <div class="d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-bootstrap fa-2x me-2 text-primary"></i>                              <p class="fw-bold m-0" style="font-size: 12px;">Bootstrap</p>
+                          </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                          <div class="progress">
+                            <div class="progress-bar" style="width: 50%;" role="progressbar"  aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">60%</div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                      <br>
+                      <!-- Javascript -->
+                      <div class="row">
+                        <div class="col-sm-4 col-md-3 col-xl-2">
+                          <div class="d-flex justify-content-center align-items-center">
+                              <i class="fa-brands fa-js fa-2x me-2 text-primary"></i>
+                              <p class="fw-bold m-0" style="font-size: 12px;">JavaScript</p>
+                          </div>
+                        </div>
+                        <div class="col d-flex align-items-center">
+                          <div class="progress">
+                            <div class="progress-bar" style="width: 100%;" role="progressbar"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--  -->
+                    </div>
+                  </div>
+                  <!-- Tab experience -->
+                  <div class="tab-pane fade" id="pills-experience" role="tabpanel" aria-labelledby="pills-experience-tab" tabindex="0">
+                    <p>Mon expériences</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        	</div>
+		    </div>
+      </section>
+      <!-- About section exit -->
+
+      <!-- Service section -->
+      <section id="services" class="services_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center mb-4">
+              <span class="subtitle">Que pui-je faire pour vous</span>
+              <h2>Mes Services</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente placeat 
+                <br class="d-nonem md-md-block"> 
+                distinctio a debitis nemo aut omnis eum</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body text-md-start text-center">
+                  <img src="images/service/service-1.svg" alt="service" class="img-fluid mb-4">
+                  <h3>Stratégie d'entreprise</h3>
+                  <p>Ca désigne l'ensemble des choix d'allocation de ressources qui définissent le périmètre d'activité d'une organisation.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body text-md-start text-center">
+                  <img src="images/service/service-2.svg" alt="service" class="img-fluid mb-4">
+                  <h3>Developpeur web</h3>
+                  <p>Le développeur web réalise l'ensemble des fonctionnalités techniques d'un site ou d'une application web.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body text-md-start text-center">
+                  <img src="images/service/service-3.svg" alt="service" class="img-fluid mb-4">
+                  <h3>Rapport marketing</h3>
+                  <p>Un rapport marketing, c'est un document essentiel et irremplaçable pour les spécialistes du marketing.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body text-md-start text-center">
+                  <img src="images/service/service-4.svg" alt="service" class="img-fluid mb-4">
+                  <h3>Développement Mobile</h3>
+                  <p>Ca correspond au processus de création et de déploiement d'applications mobiles fiables, évolutives et portables.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body text-md-start text-center">
+                  <img src="images/service/service-2.svg" alt="service" class="img-fluid mb-4">
+                  <h3>Lorem ipsum</h3>
+                  <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body text-md-start text-center">
+                  <img src="images/service/service-3.svg" alt="service" class="img-fluid mb-4">
+                  <h3>Mes derniers projet</h3>
+                  <p>Voici mes derniers projets de developpemment web a travers mes atheliers et mes taches.------------------------------------</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service section exit -->
+
+      <!-- Portfolio section -->
+      <section id="portfolio" class="portfolio_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center mb-4">
+              <span class="subtitle">Mes projets complets</span>
+              <h2>Mes derniers projets</h2>
+              <p>Voici une liste exaustive des differents projets <br class="d-none d-md-block">auquels j'ais eu a participer.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/Foodies.png);">EXEMPLE</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/App-Landing-Page.png);">EXEMPLE</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/E-Commerce-Website-Using-Bootstap-5.png);">EXEMPLE</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/HeadPhones.png);">EXEMPLE</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/Ecommerce-Jewellery-Website.png);">EXEMPLE</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/Hashtag-Landing-Page.png);">EXEMPLE</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/Christmas-Landing-Page.png);">EXEMPLE</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/SEO-Landing-Page.png);">EXEMPLE</span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/Full-NoraHovard.png);"></span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/Full-JohnStone.png);"></span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/Full-DigitalAgency.jpeg);"></span>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card p-0">
+                <span style="background-image: url(images/portfolio/Full-CheikhGueye.jpeg);"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section exit -->
+
+      <!-- Contact section -->
+      <section id="contact" class="contact_wrapper">
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+
+            <div class="col-lg-6 order-2 order-lg-1 pe-lg-5 text-lg-start text-center">
+              <span class="subtitle">Mes projets complets</span>
+              <h2>M'engagez</h2>
+              <div class="row call_detail mb-4">
+                <label for="" class="col-sm-3 col-lg-5">Appeler moi directement :</label>
+                <div class="col-sm-9 col-lg-7 mb-3 mb-lg-2 text-md-start">
+                  <a href="javascript:void(0)">+221 70 718 14 79</a>
+                </div>
+                <label for="" class="col-sm-3 col-lg-5">Contact Email :</label>
+                <div class="col-sm-9 col-lg-7 mb-3 mb-lg-2 text-md-start">
+                  <a href="mailto:cheikhgueye2018@outlook.com">cheikhgueye2018@outlook.com</a>
+                </div>
+              </div>
+              <form action="">
+                <div class="mb-4">
+                  <input type="text" class="form-control" placeholder="Quel est votre Nom ?" autocomplete="off">
+                </div>
+                <div class="mb-4">
+                  <input type="text" class="form-control" placeholder="Quel est votre numero de telephone ?" autocomplete="off">
+                </div>
+                <div class="mb-4">
+                  <input type="text" class="form-control" placeholder="Quel est votre adresse Email ?" autocomplete="off">
+                </div>
+                <div class="mb-4">
+                  <textarea name="" id="message" cols="40" rows="4" class="form-control" placeholder="Ecriver un message" autocomplete="off"></textarea>
+                </div>
+                <button type="submit" class="main-btn">Envoyer</button>
+              </form>
+            </div>
+
+            <div class="col-lg-6 order-1 mb-4 order-lg-1 mb-lg-0">
+              <img src="images/N/A (15).jpg" alt="" class="img-fluid  pt-lg-5 mt-lg-5">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact section exit -->
+    </main>
+
+     <!-- footer -->
+    <footer>
+      <!-- Footer section -->
+      <section id="contact" class="footer_wrapper mt-3 mt-md-0">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-6 text-center text-md-start">
+              <div class="footer-logo mb-3 mb-md-0">
+                <img src="images/logo.png" alt="logo" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 mb-md-0">
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="copyright-text text-lg-start text-center mb-3 mb-lg-0">
+                <p class="mb-0">Copyright <i class="fa-solid fa-copyright"></i> 2023 <a href="#">Cheikh Gueye</a>. All Right Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer section exit -->
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
